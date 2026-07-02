@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HealthPal Portfolio</title>
+<style>
+:root{
+ --navy:#081C2D;
+ --green:#0F9D58;
+ --gold:#FFB703;
+ --light:#F5FBF8;
+ --card:#fff;
+}
+*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
+body{font-family:Segoe UI,Arial,sans-serif;background:var(--light);color:#24323f;line-height:1.7}
+header{
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:40px;
+color:#fff;
+background:linear-gradient(135deg,var(--navy),#113A5C,var(--green));
+position:relative;
+overflow:hidden;
+}
+header:before,header:after{
+content:"";
+position:absolute;
+border-radius:50%;
+background:rgba(255,255,255,.08);
+animation:float 8s ease-in-out infinite;
+}
+header:before{width:260px;height:260px;left:-80px;top:-40px;}
+header:after{width:420px;height:420px;right:-120px;bottom:-120px;}
+@keyframes float{50%{transform:translateY(-20px)}}
+.hero h1{font-size:4rem}
+.hero p{max-width:750px;margin:20px auto}
+.badges{display:flex;gap:15px;justify-content:center;flex-wrap:wrap;margin-top:25px}
+.badge{background:rgba(255,255,255,.15);padding:12px 18px;border-radius:30px}
+nav{
+position:sticky;top:0;background:#fff;z-index:99;
+box-shadow:0 4px 18px rgba(0,0,0,.12)
+}
+nav ul{display:flex;justify-content:center;flex-wrap:wrap;list-style:none}
+nav a{
+display:block;padding:18px 20px;text-decoration:none;
+font-weight:700;color:var(--green)
+}
+nav a:hover{color:var(--navy)}
+section{padding:80px 8%}
+.section-title{font-size:2.3rem;color:var(--green);margin-bottom:25px}
+.about{
+background:#fff;border-radius:24px;padding:35px;
+box-shadow:0 12px 30px rgba(0,0,0,.08)
+}
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(360px,1fr));
+gap:28px
+}
+.card{
+background:#fff;
+border-radius:22px;
+padding:24px;
+box-shadow:0 12px 30px rgba(0,0,0,.08);
+transition:.3s
+}
+.card:hover{transform:translateY(-8px)}
+.card h3{color:var(--navy);margin-bottom:12px}
+iframe{
+width:100%;
+aspect-ratio:16/9;
+border:none;
+border-radius:16px;
+margin:18px 0;
+box-shadow:0 10px 25px rgba(0,0,0,.2)
+}
+.note{
+background:#eef8f3;
+padding:12px;
+border-left:5px solid var(--green);
+border-radius:10px
+}
+@media(max-width:768px){
+.hero h1{font-size:2.5rem}
+section{padding:60px 20px}
+}
+</style>
+</head>
+<body>
+
+<header id="home">
+<div class="hero">
+<h1>HealthPal</h1>
+<h2>Mobile Application e-Portfolio</h2>
+<p>My name is Aisyah Nabilah and currently is in my second year of Bachelor in Information Technology at Universiti Kebangsaan Malaysia. This portfolio showcases my HealthPal journey inspired by SDG 3: Good Health and Well-being.</p>
+
+<div class="badges">
+<div class="badge">A211911</div>
+<div class="badge">HealthPal</div>
+<div class="badge">Dr. Rimaniza binti Zainal Abidin</div>
+<div class="badge">SDG 3</div>
+</div>
+
+</div>
+</header>
+
+<nav>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#labs">Labs</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#reflection">Reflection</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#resources">Resources</a></li>
+</ul>
+</nav>
+
+<section>
+<h2 class="section-title">About</h2>
+<div class="about">
+<p><strong>Name:</strong> Aisyah Nabilah binti Mohamad Nizami</p>
+<p><strong>Matric:</strong> A211911</p>
+<p><strong>Programme:</strong> HealthPal</p>
+<p><strong>Instructor:</strong> Dr. Rimaniza binti Zainal Abidin</p>
+<p><strong>SDG 3:</strong> Good Health and Well-being because one must always prioritise health for a long satisfying happy life.</p>
+</div>
+</section>
+
+<section id="labs">
+<h2 class="section-title">Laboratory Exercises</h2>
+<div class="grid">
+
+<div class="card">
+<h3>Lab 1 – UI</h3>
+<p>Designed a responsive Jetpack Compose interface.</p>
+<iframe src="https://www.youtube.com/embed/cXhk5IeIwwM" allowfullscreen title="Lab 1 – UI"></iframe>
+<div class="note">This lab helped me understand layouts, spacing and UI composition, forming the basis for HealthPal.</div>
+</div>
+
+<div class="card">
+<h3>Lab 2 – Interaction</h3>
+<p>Implemented interaction and state management.</p>
+<iframe src="https://www.youtube.com/embed/4bLWi3YYMHg" allowfullscreen title="Lab 2 – Interaction"></iframe>
+<div class="note">I learned how user input updates the interface dynamically, improving the user experience.</div>
+</div>
+
+<div class="card">
+<h3>Lab 3 – Material Design</h3>
+<p>Applied Material Design 3 components.</p>
+<iframe src="https://www.youtube.com/embed/cKrtzmmnUv4" allowfullscreen title="Lab 3 – Material Design"></iframe>
+<div class="note">Using Material Design improved consistency, accessibility and the professional appearance of the app.</div>
+</div>
+
+<div class="card">
+<h3>Lab 4 – Navigation</h3>
+<p>Created multi-screen navigation.</p>
+<iframe src="https://www.youtube.com/embed/JjjXutzP-5I" allowfullscreen title="Lab 4 – Navigation"></iframe>
+<div class="note">This lab introduced Navigation Compose, allowing the application to scale into multiple interconnected screens.</div>
+</div>
+
+<div class="card">
+<h3>Lab 5 – Room</h3>
+<p>Implemented Room Database.</p>
+<iframe src="https://www.youtube.com/embed/cGlzSfWqmJo" allowfullscreen title="Lab 5 – Room"></iframe>
+<div class="note">I learned persistent local storage using Room and strengthened my understanding of MVVM architecture.</div>
+</div>
+
+</div>
+</section>
+
+<!-- PART 1 ENDS HERE -->
+
+<section id="projects">
+
+<h2 class="section-title">Project 1</h2>
+
+<div class="project" style="background:#081C2D;color:white;border-radius:24px;padding:40px;margin-bottom:50px;">
+<h3 style="color:#FFB703;font-size:2rem;">HealthPal — Project 1</h3>
+<p><strong>Problem Statement</strong><br>
+Many of the new generation does not do any health tracking due to each app tracking only one thing at a time. HealthPal combines multiple health trackers into one application to encourage healthier lifestyles.</p>
+
+<div style="max-width:1000px;margin:25px auto;">
+<iframe style="width:100%;aspect-ratio:16/9;border:none;border-radius:16px;" src="https://www.youtube.com/embed/Mk5csv3JO_Q" allowfullscreen></iframe>
+</div>
+
+<p><strong>Reflection</strong><br>
+Project 1 allowed me to integrate the concepts from previous labs into a complete Android application. I gained valuable experience designing interfaces, implementing navigation and developing a user-friendly health tracker.</p>
+
+<p style="margin-top:20px;">
+<a href="https://drive.google.com/drive/folders/1ig6t1pbTrnhHwrQ2sZxviaiMBgIdQRLW?usp=drive_link"
+target="_blank"
+style="background:#0F9D58;color:white;padding:14px 24px;border-radius:30px;text-decoration:none;font-weight:bold;">
+View on GitHub
+</a>
+</p>
+
+</div>
+
+<h2 class="section-title">Project 2</h2>
+
+<div class="project" style="background:#081C2D;color:white;border-radius:24px;padding:40px;">
+
+<h3 style="color:#FFB703;font-size:2rem;">HealthPal — Project 2</h3>
+
+<p><strong>Problem Statement</strong><br>
+To encourage more people in keeping track of their health, HealthPal now integrates Room Database, Firebase Cloud, APIs, sensors and community support to create a smarter health companion.</p>
+
+<div style="max-width:1000px;margin:25px auto;">
+<iframe style="width:100%;aspect-ratio:16/9;border:none;border-radius:16px;" src="https://www.youtube.com/embed/lRNdgPrBQfQ" allowfullscreen></iframe>
+</div>
+
+<p><strong>Reflection</strong><br>
+Project 2 expanded my understanding of full-stack Android development by combining local persistence, cloud synchronization and live internet data. It demonstrated how multiple technologies work together to create a practical mobile application.</p>
+
+<p style="margin-top:20px;">
+<a href="https://github.com/a211911-ship-it/A211911_Rimaniza_Pt2"
+target="_blank"
+style="background:#0F9D58;color:white;padding:14px 24px;border-radius:30px;text-decoration:none;font-weight:bold;">
+View on GitHub
+</a>
+</p>
+
+</div>
+
+</section>
+
+<section id="reflection">
+
+<h2 class="section-title">Reflection & Learning Journey</h2>
+
+<div class="about">
+<p>
+Throughout this course I progressed from designing simple interfaces to building a complete health application. Every laboratory introduced a new concept that prepared me for the next stage of development. By completing both HealthPal projects I strengthened my knowledge of Kotlin, Jetpack Compose, Room Database, Firebase, APIs and mobile application architecture while understanding how technology can contribute to SDG 3.
+</p>
+</div>
+
+</section>
+
+<section id="skills">
+
+<h2 class="section-title">Skills & Technologies</h2>
+
+<div class="grid">
+
+<div class="card">Kotlin</div>
+<div class="card">Jetpack Compose</div>
+<div class="card">Room Database</div>
+<div class="card">Firebase</div>
+<div class="card">Retrofit / REST API</div>
+<div class="card">Material Design 3</div>
+<div class="card">Git & GitHub</div>
+<div class="card">Android Studio</div>
+
+</div>
+
+</section>
+
+<section id="resources">
+
+<h2 class="section-title">Resources</h2>
+
+<div class="about">
+
+<ul>
+
+<li>Android Developers Documentation</li>
+
+<li>Jetpack Compose Documentation</li>
+
+<li>Room Database</li>
+
+<li>Firebase Firestore</li>
+
+<li>Material Design 3</li>
+
+<li>NewsAPI</li>
+
+<li>GitHub</li>
+
+<li>OpenAI ChatGPT (used for brainstorming, debugging and documentation assistance)</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<footer style="background:#081C2D;color:white;text-align:center;padding:40px;">
+
+<h3>Aisyah Nabilah binti Mohamad Nizami</h3>
+
+<p>Matric Number: A211911</p>
+
+<p>HealthPal e-Portfolio</p>
+
+<p>© 2026 Universiti Kebangsaan Malaysia</p>
+
+</footer>
+
+</body>
+
+</html>
